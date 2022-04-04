@@ -1,0 +1,111 @@
+@use 'fonts' as *;
+@use 'variables' as v;
+@use 'measure';
+@use 'custom';
+@use 'buttons';
+
+
+$color-primary: map-get($map: v.$colors, $key: 'primary');
+$color-secundary: map-get($map: v.$colors, $key: 'secundary');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size;
+}
+
+html,
+body {
+  @extend %fontDin;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100vh;
+  color: #fff;
+}
+
+body {
+  font-size: 1.4rem;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#__next {
+  min-height: 100vh;
+  height: 100%;
+}
+
+h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.color-black {
+  color: map-get($map: v.$colors, $key: 'black');    
+}
+
+.color-secundary {
+  color: $color-secundary;
+}
+
+.bg-secundary {
+  background-color: $color-secundary;
+}
+
+.title {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+
+.text_description {
+  font-size: 3rem;
+}
+
+.divider {
+  width: 8rem;    
+  height: 1.2rem;
+  background: map-get($map: v.$colors, $key: 'secundary');    
+  border-radius: 2rem;
+  margin: 2rem 0;
+  &.right {
+    align-self: flex-end;
+  }
+  &.left {
+    align-self: flex-start;
+  }
+  &.center {
+    align-self: center;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .title {
+      font-size: 4rem;
+  }
+
+  .text_description { 
+    font-size: 2rem;
+  }
+
+}
+
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+  .title {
+    font-size: 2rem;
+  }
+
+.text_description { 
+  font-size: 1.4rem;
+}
+
+}

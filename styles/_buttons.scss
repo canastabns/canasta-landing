@@ -1,0 +1,118 @@
+@use 'variables' as *;
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  height: 100%;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  line-height: 1.5;
+  border-radius: 0.4rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  &:focus, &:hover {
+    text-decoration: none;
+  }
+}
+
+
+.btn-primary {
+  color: map-get($map: $colors, $key: 'white' );
+  background-color: map-get($map: $colors, $key: 'primary' );
+  border-color: map-get($map: $colors, $key: 'primary' );
+  &:hover {
+    color: map-get($map: $colors, $key: 'white' );
+    background-color: map-get($map: $colors, $key: 'darkPrimary' );
+    border-color: map-get($map: $colors, $key: 'darkPrimary' );
+  }
+}
+
+.btn-secundary {
+  color: map-get($map: $colors, $key: 'white' );
+  background-color: map-get($map: $colors, $key: 'primary' );
+  border-color: map-get($map: $colors, $key: 'primary' );
+  &:hover {
+    color: map-get($map: $colors, $key: 'white' );
+    background-color: map-get($map: $colors, $key: 'darkPrimary' );
+    border-color: map-get($map: $colors, $key: 'darkPrimary' );
+  }
+}
+
+.btn-success {
+  color: map-get($map: $colors, $key: 'white' );
+  background-color: map-get($map: $colors, $key: 'primary' );
+  border-color: map-get($map: $colors, $key: 'primary' );
+  &:hover {
+    color: map-get($map: $colors, $key: 'white' );
+    background-color: map-get($map: $colors, $key: 'darkPrimary' );
+    border-color: map-get($map: $colors, $key: 'darkPrimary' );
+  }
+}
+
+.btn-light {
+  background-color: transparent;
+  border-color: map-get($map: $colors, $key: 'gray' );
+  color: map-get($map: $colors, $key: 'gray' );
+  &:hover {
+    color: map-get($map: $colors, $key: 'primary' );
+    border-color: map-get($map: $colors, $key: 'primary' );
+  }
+}
+
+.btn-warning {
+  color: map-get($map: $colors, $key: 'white' );
+  background-color: map-get($map: $colors, $key: 'primary' );
+  border-color: map-get($map: $colors, $key: 'primary' );
+  &:hover {
+    color: map-get($map: $colors, $key: 'white' );
+    background-color: map-get($map: $colors, $key: 'darkPrimary' );
+    border-color: map-get($map: $colors, $key: 'darkPrimary' );
+  }
+}
+
+.btn-danger {
+  color: map-get($map: $colors, $key: 'white' );
+  background-color: map-get($map: $colors, $key: 'primary' );
+  border-color: map-get($map: $colors, $key: 'primary' );
+  &:hover {
+    color: map-get($map: $colors, $key: 'white' );
+    background-color: map-get($map: $colors, $key: 'darkPrimary' );
+    border-color: map-get($map: $colors, $key: 'darkPrimary' );
+  }
+}
+
+.btn-info {
+  color: map-get($map: $colors, $key: 'white' );
+  background-color: map-get($map: $colors, $key: 'primary' );
+  border-color: map-get($map: $colors, $key: 'primary' );
+  &:hover {
+    color: map-get($map: $colors, $key: 'white' );
+    background-color: map-get($map: $colors, $key: 'darkPrimary' );
+    border-color: map-get($map: $colors, $key: 'darkPrimary' );
+  }
+}
+
+.btn-link {
+  color: map-get($map: $colors, $key: 'white' );
+  background-color: map-get($map: $colors, $key: 'primary' );
+  border-color: map-get($map: $colors, $key: 'primary' );
+  &:hover {
+    color: map-get($map: $colors, $key: 'white' );
+    background-color: map-get($map: $colors, $key: 'darkPrimary' );
+    border-color: map-get($map: $colors, $key: 'darkPrimary' );
+  }
+}

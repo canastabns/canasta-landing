@@ -1,0 +1,82 @@
+.content  {
+    display: grid;
+   
+    margin-bottom: 10rem;
+    & h3 {
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+}
+
+.faqs {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    color: #1a1a1a;
+    margin-bottom: 5rem;
+    place-self: center;
+ 
+    &__title {
+        font-weight: 700;
+        font-size: 1.8rem;
+        background-color: #ffc107;
+        border-radius: 5rem;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        position: relative;
+
+        & .caret {
+            position: absolute;
+            top: 50%;  /* position the top  edge of the element at the middle of the parent */
+            right: 0%; /* position the left edge of the element at the middle of the parent */
+            transform: translate(-50%, -50%); 
+            margin-right: 1rem;
+
+        }
+        
+    }
+    &__description {
+        background: #3e3e3e;
+        color: #fff;
+        width: 95%;
+        align-self: center;
+        min-height: 15rem;
+        height: auto;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        transition: all 0.5s;
+    }
+    &__text {
+        padding: 2rem;
+    }
+}
+
+.showme {
+    transition: all 0.5s;
+    height: 0;
+    overflow: hidden;
+    min-height: 0;
+}
+
+@media (max-width: 620px) {
+    .content__box {
+      grid-template-columns: repeat(1, 1fr);
+    }
+   
+  }
+
+  @media only screen and (min-width: 375px) and (max-width: 767px) {
+
+    .faqs {
+        &__title {
+            font-size: 1.3rem;
+
+            & .caret {
+                margin-top: 0.3rem;
+                margin-right: 0;
+            }
+        }
+       
+    }
+}

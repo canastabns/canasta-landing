@@ -1,0 +1,59 @@
+@use '~/styles/variables' as *;
+
+.content  {
+    display: grid;
+    place-content: center;
+    margin-bottom: 5rem;
+    & h3 {
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+}
+.content__box {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 50%));
+    gap: 2rem;
+}
+
+.content__text {
+    text-align: right;
+    margin-right: -5rem;
+    justify-self: flex-end;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+
+.content__image {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+@media (max-width: 1400px) {
+    .content__text_title {
+        font-size: 4rem;
+    }
+
+    .content__text_description { 
+        font-size: 2rem;
+    }
+  }
+ 
+
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+    .content__box {
+        grid-template-columns: repeat(1, minmax(0, 100%));
+        gap: 1rem;
+    }
+
+    .content__text { 
+        text-align: center;
+        justify-self: center;
+        margin-right: 0;
+    }
+}

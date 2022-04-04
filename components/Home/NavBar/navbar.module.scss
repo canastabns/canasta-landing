@@ -1,0 +1,96 @@
+@use '~/styles/variables' as *;
+
+.navbar {
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 6rem 0 0;
+  border-top: 2rem solid map-get($map: $colors, $key: 'secundary' );
+ 
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 70%;
+  }
+
+  &__logo {
+    width: 50%;
+  }
+
+  &__cta {
+    width: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    & ul {
+      list-style: none;
+      display: flex;
+      color: #888991;
+      justify-content: center;
+      align-items: center;
+
+      & li:nth-last-child(n+2) {
+        margin: 0 1rem;
+        border-right: 1px solid #888991;
+        padding-right: 1rem;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+.button {
+  padding: 1rem;
+  background: #f4bb17;
+  font-weight: 700;
+  border: none;
+  border-radius: 1.2rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  color: #212121;
+  &:hover {
+    background: #dfab0e;
+  }
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .navbar {
+    &__logo {
+      width: 40%;
+    }
+    &__cta {
+      width: 60%;
+      place-content: flex-end;
+      font-size: 1.2rem;
+    }
+    &__menu{
+    display: none;
+    width: 0;
+    }
+  }
+}
+
+
+
+
+@media only screen and (min-width: 355px) and (max-width: 767px) {
+  .navbar {
+    border-top: 1rem solid map-get($map: $colors, $key: 'secundary' );
+    padding: 1.2rem 1.2rem;
+
+    &__content { 
+      width: 90%;
+    }
+  }  
+}
+

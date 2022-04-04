@@ -1,0 +1,70 @@
+@use '~/styles/variables' as *;
+
+.content  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 3rem;
+    background: #F4B919;
+}
+
+
+.content__box {
+  background: linear-gradient(90deg, #181C2E 0%, #181C2E 0%, #2d3456 50%, #181C2E 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.box__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  height: 6rem;
+}
+
+.item__divider {
+  height: 100%;
+  width: 3px;
+  background: #F4B919;
+  margin: 0 1rem;
+}
+
+.box__button {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #F4B919;
+  color: #07080f;
+  width: 80%;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.item__text {
+  width: 12rem;
+}
+
+
+
+@media (max-width: 620px) {
+    .content__box {
+      grid-template-columns: repeat(1, 1fr);
+    }
+   
+  }
+
+ 

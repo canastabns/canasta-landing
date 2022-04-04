@@ -1,0 +1,29 @@
+.content  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+
+
+.content__text {
+    text-align: center;
+    width: 50%;
+    justify-self: center;
+}
+
+
+@media (max-width: 620px) {
+    .content__box {
+      grid-template-columns: repeat(1, 1fr);
+    }
+   
+  }
+
+  @media only screen and (min-width: 350px) and (max-width: 767px) {
+      .content  {
+        margin-bottom: 5rem;
+      }
+  }
+  
+ 

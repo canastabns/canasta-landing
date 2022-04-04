@@ -1,0 +1,28 @@
+.main {
+  min-height: 100vh;
+  display: grid;
+  background-image: url('/assets/bg-cta.png'), linear-gradient(180deg, #0F1221 0%, #181C2E 100%);
+  background-repeat: no-repeat;
+  background-position: top center;
+
+}
+
+.content {
+ height: 100%;
+}
+
+
+@media (max-width: 780px) {
+  .main {
+    background-position-y: 6rem;
+    background-size: 100%;
+  }
+ 
+}
+
+@media (max-width: 1280px) {
+  .main {
+    background-size: 100%;
+  }
+ 
+}

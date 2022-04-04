@@ -1,0 +1,129 @@
+@use '~/styles/variables' as *;
+
+.content {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+  }
+
+.text {
+    margin: 5px 0;
+  }
+
+  .content__text {
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    justify-self: center;
+    margin-top: 4rem;
+    width: 50%;
+
+    & h1 {
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 4rem;
+      color: map-get($map: $colors, $key: 'secundary' )
+    }
+  
+    & h2 {
+      font-size: 4rem;
+      line-height: 5rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+  }
+  
+  .button__cta {
+    width: 20rem;
+    align-self: center;
+    color: #000;
+  }
+  
+  .button {
+    padding: 1rem;
+    background: #f4bb17;
+    border: none;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    color: #222222;
+    &:hover {
+      background: #dfab0e;
+    }
+  }
+  
+  
+  @media (max-width: 1400px) {
+    .content {
+      height: 135vh;
+    }
+    .content__text {
+      & h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+  
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .content__text {
+      width: 60%;
+    }
+  }
+
+
+  @media (max-width: 980px) {
+    .content {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 2rem;
+    }
+    .content__text {
+      width: 80%;
+      & h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+    
+      & h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 350px) and (max-width: 767px) {
+    .content {
+      margin-top: 1rem;
+      height: auto;
+      min-height: 55vh;  
+      max-height: -webkit-fill-available;
+    }
+
+    .content__text {
+      margin-top: 1rem;
+      & h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+      & h2 {
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+      }
+    }
+    .content__cta {
+      width: 100%;
+      justify-content: center;
+      display: flex; 
+
+      & div {
+        width: 50% !important;
+      }
+    }
+  }
+
+  
+  

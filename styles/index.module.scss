@@ -1,0 +1,22 @@
+.container {
+  height: auto;
+  display: grid;
+  grid-template-rows: auto 1fr 5rem;
+  background: #0F1221;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+
+.rombo {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  border-right: 350px solid transparent;
+  border-left: 350px solid transparent;
+  border-bottom: 170px solid #F4B919;
+  z-index: 0;
+}
+  

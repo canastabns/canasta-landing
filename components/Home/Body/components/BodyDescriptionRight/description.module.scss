@@ -1,0 +1,79 @@
+@use '~/styles/variables' as *;
+
+.content  {
+    display: grid;
+    place-content: center;
+    margin-bottom: 10rem;
+    & h3 {
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+}
+.content__box {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 50%));
+    gap: 2rem;
+ 
+}
+
+.content__text {
+    text-align: left;
+    margin-left: -5rem;
+    justify-self: flex-start;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.content__text_description {
+    font-size: 3rem;
+    color: map-get($map: $colors, $key: 'secundary');
+}
+
+.content__image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+@media (max-width: 1400px) {
+    .content__text_title {
+        font-size: 4rem;
+    }
+
+    .content__text_description { 
+        font-size: 2rem;
+    }
+  }
+ 
+
+
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+    .content {
+        margin-bottom: 5rem;
+    }
+    .content__box {
+        grid-template-columns: repeat(1, minmax(0, 100%));
+        gap: 1rem;
+    }
+
+    .content__image {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        & img {
+            width: 250px !important;
+        }
+    }
+
+    .content__text {
+        text-align: center;
+        margin-left: 0;
+        justify-self: center;
+        width: 90%;
+    }
+
+}
