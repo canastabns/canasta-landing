@@ -2,6 +2,20 @@ import Image from 'next/image';
 import styles from './description.module.scss';
 
 const BodyDescriptionSocials = () => {
+    const baseUrl = {
+        telegram: 'https://t.me/canastaofficial',
+        discord: 'https://discord.gg/MtayqAs6',
+        twitter: 'https://twitter.com/CanastaDomains',
+        docs: 'https://docs.canasta.domains',
+        medium: 'https://blog.canasta.domains/',
+    }
+
+    const clickToUrl = (type) => {
+        window.open(
+            baseUrl[type],
+            '_blank' 
+          );
+    }
     return (
         <div className={styles.content}>
             <div className={styles.content__box}>
@@ -23,7 +37,7 @@ const BodyDescriptionSocials = () => {
                 </div>
 
                 {/* DISCORD  */}
-                <div className={styles.box__item}>
+                <div className={styles.box__item} onClick={()=>clickToUrl('discord')}>
                     <div className={styles.item}>
                         <div className={styles.item__icon}>
                             <Image 
@@ -32,6 +46,7 @@ const BodyDescriptionSocials = () => {
                             width={40} 
                             height={30} 
                             className={styles.socials__icon} 
+                          
                         />
                         </div>
                         <div className={styles.item__divider} />
@@ -43,7 +58,7 @@ const BodyDescriptionSocials = () => {
 
 
                 {/* forum */}
-                <div className={styles.box__item}>
+                <div className={styles.box__item} onClick={()=>clickToUrl('medium')}>
                     <div className={styles.item}>
                         <div className={styles.item__icon}>
                             <Image 
@@ -52,6 +67,7 @@ const BodyDescriptionSocials = () => {
                             width={30} 
                             height={30} 
                             className={styles.socials__icon} 
+                           
                         />
                         </div>
                         <div className={styles.item__divider} />
@@ -62,7 +78,7 @@ const BodyDescriptionSocials = () => {
                  {/* forum */}
 
                   {/* forum */}
-                <div className={styles.box__item}>
+                <div className={styles.box__item} onClick={()=>clickToUrl('docs')}>
                     <div className={styles.item}>
                         <div className={styles.item__icon}>
                             <Image 
