@@ -9,7 +9,7 @@ const Navbar = () => {
       action: "CTA-MENU",
       params : ""
     })
-    document.location.href = 'https://canasta.domains';
+    document.location.href = 'https://app.canasta.domains';
   }
   return (
     <div className={styles.navbar}>
