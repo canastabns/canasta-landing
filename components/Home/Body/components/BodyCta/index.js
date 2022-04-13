@@ -1,9 +1,8 @@
-import Image from "next/image";
 import styles from './cta.module.scss';
 
 const BodyCta = () => {
     const navigate = ()=> {
-        document.location.href = 'https://canasta.domains';
+        document.location.href = 'https://app.canasta.domains';
       }
     return (
         <div className={styles.content}>
