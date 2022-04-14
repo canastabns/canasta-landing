@@ -4,7 +4,7 @@ import styles from './description.module.scss';
 const BodyDescriptionSocials = () => {
     const baseUrl = {
         telegram: 'https://t.me/canastaofficial',
-        discord: 'https://discord.gg/MtayqAs6',
+        discord: 'https://discord.gg/X5HGFr5Cuf',
         twitter: 'https://twitter.com/CanastaDomains',
         docs: 'https://docs.canasta.domains',
         medium: 'https://blog.canasta.domains/',
