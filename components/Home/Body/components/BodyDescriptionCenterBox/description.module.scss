@@ -35,7 +35,6 @@
     text-align: center;
     width: 90%;
     justify-self: center;
-    opacity: 0.8;
 }
 
 
@@ -55,3 +54,18 @@
     }
 
   }
+
+.url {
+  padding: 1rem;
+  background: #f4bb17;
+  border: none;
+  border-radius: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: #222222;
+}
+
+.tokenLink {
+  text-decoration: underline;
+  cursor: pointer;
+}

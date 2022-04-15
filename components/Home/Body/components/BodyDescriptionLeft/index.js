@@ -8,8 +8,8 @@ const BodyDescription = () => {
             <div className={styles.content__box}>
                 <div className={styles.content__text}>
                    <div className={`title`}>
-                       Your .bnb domain is an easy way to interact with all your binance ecosystem
-                    </div>
+                       Your .bnb domain is an easy way to interact with the expanding Binance ecosystem.
+                   </div>
 
                    <div className={`divider right`}></div>
                    <div className={'text_description color-secundary'}>Instead of remembering long strings, get your personalized name and save it for posterity. 

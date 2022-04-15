@@ -1,12 +1,12 @@
 @use '~/styles/variables' as *;
 
-.content  {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 3rem;
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 3rem;
 }
 
 
@@ -58,12 +58,12 @@
 }
 
 
-
 @media (max-width: 620px) {
-    .content__box {
-      grid-template-columns: repeat(1, 1fr);
-    }
-   
+  .content__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+}
 
  

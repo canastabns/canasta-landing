@@ -96,7 +96,6 @@ const BodyDescriptionSocials = () => {
                 </div>
                  {/* forum */}
             </div>
-
         </div>
     )
 }
