@@ -27,8 +27,7 @@ const BodyDescriptionCenterBox = () => {
                 >@CNST</a> token you can
                     participate in
                     governance decisions, allocate treasury funds and, if staked, you receive the corresponding
-                    percentage of all domains purchased in the protocol (this is not clear: it says that you receive a
-                    percentage of domains, not a percentage of the fees generated from domain name sales).
+                    percentage of all domains purchased in the protocol.
                     <br/>
                     <br/>
                     <a
