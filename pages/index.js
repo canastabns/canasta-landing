@@ -20,20 +20,21 @@ export default function Home() {
                 <meta name="theme-color" content="#ffffff"/>
 
                 <meta property="og:site_name" content="Canasta"/>
-                <meta property="og:url" content="https://canasta.domain"/>
+
+                <meta property="og:url" content="https://canasta.domains"/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:title" content="Canasta domains"/>
                 <meta property="og:description" content="A decentralized naming solution for the BNB ecosystem."/>
-                <meta property="og:image" content="https://canasta.domain/assets/icon-shared.png"/>
+                <meta property="og:image" content="https://canasta.domains/assets/icon-shared.png"/>
 
                 <meta itemProp="name" content="Canasta domains"/>
                 <meta itemProp="description" content="A decentralized naming solution for the BNB ecosystem."/>
-                <meta itemProp="image" content="https://canasta.domain/assets/icon-shared.png"/>
+                <meta itemProp="image" content="https://canasta.domains/assets/icon-shared.png"/>
 
                 <meta name="twitter:card" content="summary_large_image"/>
                 <meta name="twitter:title" content="Canasta domains"/>
                 <meta name="twitter:description" content="A decentralized naming solution for the BNB ecosystem."/>
-                <meta name="twitter:image" content="https://canasta.domain/assets/icon-shared.png"/>
+                <meta name="twitter:image" content="https://canasta.domains/assets/icon-shared.png"/>
 
                 {/* Global Site Tag (gtag.js) - Google Analytics */}
                 <script
