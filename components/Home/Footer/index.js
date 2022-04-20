@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       
        <span className={styles.logo}>
-          <Image src="/assets/logo-canasta-dark.png" alt="Canasta Logo" width={150} height={40} />
+          <Image src="/assets/canasta-logo-black.svg" alt="Canasta Logo" width={150} height={40} />
         </span>
    
     </footer>

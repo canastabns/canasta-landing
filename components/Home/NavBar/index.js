@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className={styles.navbar}>
       <div className={styles.navbar__content}>
         <div className={styles.navbar__logo}>
-          <Image src='/assets/canasta-logo.svg' alt='Canasta logo' width={250} height={'100%'} />
+          <Image src='/assets/canasta-logo-yellow.svg' alt='Canasta logo' width={250} height={'100%'} />
         </div>
       
         <div className={styles.navbar__cta}>

@@ -8,6 +8,7 @@ const BodyDescriptionSocials = () => {
         twitter: 'https://twitter.com/CanastaDomains',
         docs: 'https://docs.canasta.domains',
         medium: 'https://blog.canasta.domains/',
+        newsLetter: 'https://73d55ad5.sibforms.com/serve/MUIEADElBi70PdRJGciMeR29tankNPUKeWghnDk9r6_cBLknTpj4OgG-zFIvZwVUJr36O6nRcz9d5gEVXKYKr-rZrmimaZ3MHkjwug-BrsDu68WN-BmtW7S188jdCqK_uKS5cGz4pB7ml4PxbzQp7BjebXHePhUQ4pbMwDjx8dC8Iw7P5q8afy08q10pWepZb7JbzeGUlXzXjcSi',
     }
 
     const clickToUrl = (type) => {
@@ -19,7 +20,7 @@ const BodyDescriptionSocials = () => {
     return (
         <div className={styles.content}>
             <div className={styles.content__box}>
-                <div className={styles.box__item}>
+                <div className={styles.box__item} onClick={()=>clickToUrl('newsLetter')}>
                     <div className={styles.item}>
                         <div className={styles.item__icon}>
                             <Image 
